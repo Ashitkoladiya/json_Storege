@@ -1,0 +1,12 @@
+export const INCRIMENT_Data = "INCRIMENT_Data"
+export const DENCRIMENT_Data = "DENCRIMENT_Data" 
+
+export const GET_MEDICINES = "GET_MEDICINES" 
+
+
+export const LOADING_MEDICINES = "LOADING_MEDICINES"
+export const ERROR_MEDICINES = "ERROR_MEDICINES"
+export const ADD_MEDICINE = "ADD_MEDICINE"
+export const DELETE_MEDICINE = "DELETE_MEDICINE"
+
+export const UPDATE_MEDICINE = "UPDATE_MEDICINE"
