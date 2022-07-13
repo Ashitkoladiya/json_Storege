@@ -3,7 +3,7 @@ import * as ActionTypes from '../action/ActionTypes'
 const newvalue = {
     isLoading : false,
     medicine : [],
-    error : ''
+    error : '' 
     
 }
 
