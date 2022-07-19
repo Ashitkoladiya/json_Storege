@@ -36,34 +36,34 @@ console.log(action.type , action.payload , state);
                 error: action.payload
             }
 
-            case ActionTypes.ADD_MEDICINE:
-                return{
-                    ...state,
-                    isLoading: false,
-                    medicine: state.medicine.concat(action.payload),
-                    error: ''
+        case ActionTypes.ADD_MEDICINE:
+            return{
+                ...state,
+                isLoading: false,
+                medicine: state.medicine.concat(action.payload),
+                error: ''
                 }
-                case ActionTypes.DELETE_MEDICINE:
-                    return{
-                        ...state,
-                        isLoading: false,
-                        medicine: state.medicine.filter((d,i)=>d.id !== action.payload),
-                        error: ''
+        case ActionTypes.DELETE_MEDICINE:
+            return{
+                ...state,
+                isLoading: false,
+                medicine: state.medicine.filter((d,i)=>d.id !== action.payload),
+                error: ''
+            }
+        case ActionTypes.UPDATE_MEDICINE:
+            return{
+                ...state,
+                isLoading: false,
+                medicine: state.medicine.map((l)=>{
+                    if(l.id === action.payload.id){
+                        return action.payload
                     }
-                case ActionTypes.UPDATE_MEDICINE:
-                    return{
-                        ...state,
-                        isLoading: false,
-                        medicine: state.medicine.map((l)=>{
-                            if(l.id === action.payload.id){
-                                return action.payload
-                            }
-                            else{
-                                return l;
-                            }
-                        }),
-                        error: ''
+                    else{
+                        return l;
                     }
+                }),
+                error: ''
+            }
 
         default : 
         return state;
