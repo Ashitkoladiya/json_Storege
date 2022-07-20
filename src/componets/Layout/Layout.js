@@ -110,7 +110,8 @@ export default function Layout({ children }) {
     let list=[
         { lable: 'counter', to: '/counter' , icon : <WatchLaterIcon />},
         { lable: 'Doctor', to: '/doctor', icon: <SupervisedUserCircleIcon /> },
-        { lable: 'Button', to: '/Btn', icon: <FeedIcon /> }
+        { lable: 'Button', to: '/Btn', icon: <FeedIcon /> },
+        { lable: 'promisis', to: '/Promisis', icon: <FeedIcon /> }
     ]
 
     return (

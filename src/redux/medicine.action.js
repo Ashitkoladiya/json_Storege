@@ -95,7 +95,6 @@ export const addMedicine = (data) => (dispatch) => {
 }
 
 
-
 export const deleteMedicine = (id) => (dispatch) => {
   console.log(id)
   try {
