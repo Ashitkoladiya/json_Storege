@@ -11,6 +11,7 @@ import { ConfigStore } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react'
 import { Provider } from 'react-redux';
 import Promisise from './container/promises/Promisise';
+import Hookexample from './HookExample/Hookexample';
 
 function App() {
   const {store , persistor} = ConfigStore();
@@ -25,6 +26,7 @@ function App() {
         <Route exact path={"/Btn"} component={Form}></Route>
         <Route exact path={"/counter"} component={Counter} ></Route>
         <Route exact path={"/Promisis"} component={Promisise}></Route>
+        <Route exact path={"/HookExample"} component={Hookexample}></Route>
       </Switch>
 
     </Layout>
