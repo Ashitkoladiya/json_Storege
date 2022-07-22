@@ -112,7 +112,8 @@ export default function Layout({ children }) {
         { lable: 'Doctor', to: '/doctor', icon: <SupervisedUserCircleIcon /> },
         { lable: 'Button', to: '/Btn', icon: <FeedIcon /> },
         { lable: 'promisis', to: '/Promisis', icon: <FeedIcon /> },
-        { lable: 'HookExample', to: '/HookExample', icon: <FeedIcon /> }
+        { lable: 'HookExample', to: '/HookExample', icon: <FeedIcon /> },
+        { lable: 'Usecallback', to: '/Usecallback', icon: <FeedIcon /> }
     ]
 
     return (

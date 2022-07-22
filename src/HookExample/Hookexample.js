@@ -20,7 +20,7 @@ function Hookexample(props) {
     //with use memo
 
   
-    const result = useMemo(() => factorial(number), [number]);
+    const result = useMemo(() => factorial(number), [number]);   
 
     return (
         <div>
@@ -29,6 +29,7 @@ function Hookexample(props) {
 
             <h1>counter value is :{count}</h1>
             <h1>factorial value is :{result}</h1>
+            
         </div>
     );
 }

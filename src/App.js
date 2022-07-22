@@ -12,6 +12,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { Provider } from 'react-redux';
 import Promisise from './container/promises/Promisise';
 import Hookexample from './HookExample/Hookexample';
+import Usecallback from './Usecallback/Usecallback';
 
 function App() {
   const {store , persistor} = ConfigStore();
@@ -27,6 +28,7 @@ function App() {
         <Route exact path={"/counter"} component={Counter} ></Route>
         <Route exact path={"/Promisis"} component={Promisise}></Route>
         <Route exact path={"/HookExample"} component={Hookexample}></Route>
+        <Route exact path={"/Usecallback"} component={Usecallback}></Route>
       </Switch>
 
     </Layout>
